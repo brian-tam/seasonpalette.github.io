@@ -42,18 +42,20 @@
       </p>
       <ul>
         <li>
-          <strong>Camera Access:</strong> The App requests access to your
-          device's camera to analyze your colors and provide personalized
-          recommendations.
+          <strong>Camera Access and Face Image:</strong> The App requests access
+          to your device's camera to perform the color analysis. With your
+          explicit permission, a single, still image of your face is captured.
+          This image is used solely for the purpose of color analysis and is
+          stored locally on your device (see "Data Retention").
         </li>
         <li>
-          <strong>Photos:</strong> Photos taken using the App are saved locally
-          on your device to facilitate color analysis.
-        </li>
-        <li>
-          <strong>Device Information:</strong> The App may collect information
-          about your device, such as device model and operating system version,
-          to ensure optimal performance.
+          <strong>Device Information:</strong> We collect information about your
+          device to ensure optimal performance and compatibility. This may
+          include your device model (e.g., iPhone 13, Samsung Galaxy S22),
+          operating system version (e.g., iOS 17.2, Android 14), and a unique
+          device identifier that is *not* tied to your personal identity and is
+          used only for analytical purposes. We do *not* collect any personally
+          identifiable information through the device identifier.
         </li>
         <li>
           <strong>In-App Purchases:</strong> Information related to your
@@ -69,7 +71,12 @@
       <ul>
         <li>
           To provide and maintain the App's functionalities, including color
-          analysis and personalized recommendations.
+          analysis and personalized recommendations. The face image captured for
+          color analysis is used exclusively to determine your optimal color
+          palette. We send this image to Google's Gemini Developer API, a
+          third-party service, for processing. We do not use this image for any
+          other purpose, including but not limited to, advertising, user
+          profiling, or training other AI models.
         </li>
         <li>To process in-app purchases and manage subscription services.</li>
         <li>To improve the App's performance and user experience.</li>
@@ -88,10 +95,33 @@
       </p>
       <ul>
         <li>
-          <strong>Third-Party Services:</strong> We may share your information
-          with trusted third-party service providers, including SuperwallKit and
-          Apple’s StoreKit, to facilitate in-app purchases and manage
-          subscriptions.
+          <strong>Third-Party Services:</strong> We use the following
+          third-party services:
+          <ul>
+            <li>
+              <strong>Google Gemini Developer API:</strong> As described above,
+              we share the captured face image with Google's Gemini Developer
+              API for color analysis.
+            </li>
+            <li>
+              <strong>Apple's StoreKit:</strong> This service is used to process
+              in-app purchases and manage subscriptions. Apple handles all
+              payment information directly, and we do not have access to your
+              credit card details.
+            </li>
+            <li>
+              <strong>SuperwallKit:</strong> We use SuperwallKit to manage and
+              present in-app purchase options and subscriptions. SuperwallKit
+              may collect anonymized data related to your interactions with
+              purchase screens, such as which options you view or select. This
+              data is used to improve the user experience and is not linked to
+              your personal identity. You can review Superwall's privacy policy
+              here:
+              <a href="https://superwall.com/privacy-policy"
+                >Superwall Privacy Policy</a
+              >.
+            </li>
+          </ul>
         </li>
         <li>
           <strong>Legal Requirements:</strong> We may disclose your information
@@ -104,19 +134,42 @@
     <div class="section">
       <h2>4. Data Security</h2>
       <p>
-        We implement a variety of security measures to maintain the safety of
-        your personal information. However, no method of transmission over the
-        internet or electronic storage is 100% secure, and we cannot guarantee
-        its absolute security.
+        We take the security of your data seriously. We implement measures such
+        as:
+      </p>
+      <ul>
+        <li>
+          Storing the face image only within the app's secure, sandboxed storage
+          on your device.
+        </li>
+        <li>
+          Using secure connections (HTTPS) when transmitting data to third-party
+          services like Google's Gemini API.
+        </li>
+        <li>
+          Regularly reviewing our data handling practices to ensure they align
+          with industry best practices.
+        </li>
+      </ul>
+      <p>
+        However, no method of transmission over the internet or electronic
+        storage is 100% secure. While we strive to protect your information, we
+        cannot guarantee its absolute security.
       </p>
     </div>
 
     <div class="section">
-      <h2>5. Your Rights</h2>
+      <h2>5. Data Retention</h2>
       <p>
-        You have the right to access, modify, or delete your personal
-        information. If you wish to exercise these rights, please contact us
-        using the information provided below.
+        The face image is exclusively stored locally on your device, residing
+        within the app's dedicated and secure storage area. It is crucial to
+        note that this image is never transmitted to or stored on our servers.
+        Upon uninstallation of the app, the image is automatically and
+        permanently deleted. Additionally, you retain the option to expedite the
+        deletion process by clearing the app's data via your device's settings.
+        It's important to understand that the retention of the image by Google
+        is strictly governed by Google's Gemini Developer API privacy policies,
+        which we encourage you to review for detailed information.
       </p>
     </div>
 
@@ -152,6 +205,25 @@
           >
         </li>
       </ul>
+    </div>
+
+    <div class="section">
+      <h2>9. Third-Party Services</h2>
+      <p>
+        Our app utilizes Google's Gemini Developer API for color analysis. This
+        involves sending the captured face image to Google's servers for
+        processing. Google's use of this data is governed by their privacy
+        policy, which you can review here:
+        <a
+          href="https://developers.google.com/terms/api-services-user-data-policy"
+          >Google API Services User Data Policy</a
+        >.
+      </p>
+      <p>
+        Our app utilizes SuperwallKit for managing in app purchase. You can
+        review Superwall's privacy policy here:
+        <a href="https://superwall.com/privacy">Superwall Privacy Policy</a>.
+      </p>
     </div>
 
     <p>Last updated: January 13, 2025</p>
